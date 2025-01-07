@@ -29,4 +29,18 @@ router.post("/login", async (req, res) => {
 
 })
 
+  // let token = authToken.split("Bearer ");
+  //   token = token[1];
+  //   const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  // req.user = decoded; // Store the decoded user information for future use
+  // next();
+
+       // if (!user) {
+       //      return res.status(401).json({
+       //          responseCode: 401,
+       //          success: false,
+       //          message: 'Unauthorized. User log in required.'
+       //      });
+       //  }
+
 module.exports = router
