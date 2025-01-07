@@ -63,4 +63,38 @@ router.post("/login", async (req, res) => {
     //   posts: formattedPosts,
     // });
 
+
+// const multer = require("multer");
+
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "uploads");
+//   },
+//   filename: function (req, file, cb) {
+//     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9) + file.originalname;
+//     cb(null, uniqueSuffix);
+//   }
+// });
+
+
+// const fileFilter = function (req, file, cb) {
+//   const allowedFileTypes = ["jpg", "jpeg", "png", "pdf", "docx"];
+//   const fileExtension = file.originalname.split('.').pop().toLowerCase();
+//   console.log('File extension:', fileExtension); // Debug log
+
+//   if (!allowedFileTypes.includes(fileExtension)) {
+//     console.error("Invalid file type:", fileExtension); // Error log
+//     return cb(new Error("Invalid file type"), false);
+//   }
+//   cb(null, true);
+// };
+
+
+// const upload = multer({ 
+//   storage: storage,
+//   fileFilter: fileFilter,
+//   limits: { fileSize: 10 * 1024 * 1024 } // 10MB limit for each file
+// }).single('file')
+
+// module.exports = { upload };
 module.exports = router
