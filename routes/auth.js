@@ -43,4 +43,24 @@ router.post("/login", async (req, res) => {
        //      });
        //  }
 
+// Fetch all posts for the user
+    // const posts = await Post.find({ userId });
+
+    // // Group posts by age
+    // const ageCounts = {};
+    // for (let post of posts) {
+    //   ageCounts[post.age] = (ageCounts[post.age] || 0) + 1;
+    // }
+
+    // // Format the response
+    // const formattedPosts = Object.entries(ageCounts).map(([age, count]) => ({
+    //   age: Number(age),
+    //   count,
+    // }));
+
+    // res.json({
+    //   user: { name: user.name, email: user.email },
+    //   posts: formattedPosts,
+    // });
+
 module.exports = router
